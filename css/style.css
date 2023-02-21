@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+/*guia de fuentes
+font-family: 'Poppins',sans-serif;
+font-family: 'Roboto',sans-serif;
+
+guia de colores
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+/* HEADER */
+.header { 
+    background-color: #467916;
+    font-family: 'Poppins', sans-serif;
+    top: 0;
+    z-index: 2;
+}
+.header p{
+    display: flex;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+nav a {
+    color: #000000;
+
+}
+
+/* 
+.logo img{
+    height: 32px;
+    width: 32px;
+}  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+main{
+    background-color: #000000;
+    height: 100%;
+    padding-bottom: 20px;
+}
+/* INDEX */
+.reseña{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.card{
+display: flex;
+gap: 30px;
+background-color: #8f8c8c;
+border-radius: 1%;
+margin-bottom: 10px;
+padding: 30px;
+align-items: center;
+}
+/* APLICARLO EN NOTAS */
+.sectionReseña p:hover{
+    color: aqua;
+}
+
+
+
+.colorBanner{ 
+    width: 100%;
+    height: 500px;
+    font-family: 'Roboto',sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../assets/img/apocalipsis-zombie.jpg); 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: normal;
+    /**text*/
+    text-transform: uppercase;
+}
+.colorTituloSecundario{ 
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    background-position: center;
+    font-size: 30px;
+    background-color: #1e7916;
+    text-align: center;
+    font-weight: lighter;
+    font-style: normal;
+    padding: 20px;
+/**/
+}
+.colorTituloSecundario p{
+    font-size: 20px;
+
+}
+/* CONOCENOS */
+.mapa{
+display: flex;
+color: #ffffff;
+padding: 10px;
+gap: 30px;
+}
+.sectionReseña{
+    /**text*/
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: lighter;
+    font-style: normal;
+    margin: 30px;
+}
+.colorSection{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: underline;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.notas{
+    text-decoration: underline;
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+}
+.nota1 img{
+    width: 100%;
+}
+
+.imagen {
+    border-radius: 50%;
+}
+.tienda{
+    display: flex;
+    gap: 20px;
+}
+.tienda img{
+    width: 60%;
+    height: 300px;
+    border-radius: 20px;
+    left: 10%;
+    bottom: 40%;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 30px;
+    grid-template-areas: 
+    'f1 f1 f2'
+    'f1 f1 f2'
+    'f4 f3 f3'
+    'f5 f9 f6'
+    'f7 f8 f8';
+}
+
+.f1{
+grid-area: f1;
+}
+.f2{
+grid-area: f2;
+}
+.f3{
+grid-area: f3;
+}
+.f4{
+grid-area: f4;
+}
+.f5{
+grid-area: f5;
+}
+.f6{
+grid-area: f6;
+}
+.f7{
+grid-area: f7;
+}
+.f8{
+grid-area: f8;
+}
+.f9{
+    grid-area: f9;
+    display: flex;
+    color: #ffffff;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* FOOTER */
+footer{
+    background-color: #741111;
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes{
+    color: #ffffff;
+    order: 2;
+    align-self: flex-end;
+}
+.medida{
+order: 1;
+color: #ffffff;
+} 
+/* RESPONSIVE */
+@media only screen and (min-width:320px) {
+    /* HEADER */
+    ul{
+        flex-direction: column;
+    }
+    /* INDEX */
+    .card{
+        flex-direction: column;
+        font-size: 15px;
+    }
+    .imagen{
+        width: 100%;
+        height: 100%;
+    }
+    .colorBanner{
+        height: 300px;
+    }
+    .colorTituloSecundario h2{
+        font-size:26px ;
+    }
+    /* TIENDA */
+    .tienda{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+    /* HEADER */
+    .header ul{
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    /* INDEX */
+    .imagen{
+        width: 300px;
+        height: 400px;
+    }
+
+    .tienda{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+    /* INDEX */
+    .card { 
+        flex-direction: row;
+        font-size: 26px;
+    }
+    .tienda{
+    grid-template-columns: repeat(3, 1fr) ;
+    
+}
+}
+
+.fondo{
+    background-color: #4d0f0f;
+}

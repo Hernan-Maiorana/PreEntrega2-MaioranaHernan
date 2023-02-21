@@ -1,0 +1,65 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(124, 12, 12);
+}
+p{
+    color: white;
+    text-indent: 20px;
+}
+
+h1{
+    font-size: 20px;
+}
+h2{ 
+    background-image: url(https://img.freepik.com/vector-premium/manos-zombie-diferentes-colores_251819-1696.jpg?w=1380);
+    background-position: center;
+    font-size: 70px;
+    font-weight: bold;
+    font-style: normal;
+    /**text*/
+    text-align: center;
+    color: white;
+}
+h3{ 
+    background-position: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    /**text*/
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+h4{
+    background-position: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    /**text*/
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+h5{
+    background-position: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    /**text*/
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+h6{
+    background-position: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    /**text*/
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
