@@ -306,6 +306,10 @@ flex-direction: column;
 }
 
 @media (max-width: 768px) {
+    /* INDEX */
+    .card{
+        flex-direction: column;
+    }
 /* TIENDA */
 .tienda{
     display: grid;
